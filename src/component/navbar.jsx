@@ -12,9 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import './index.scss'
 
-
-const pages = ['Store', 'Contact', 'About us'];
+const pages = ['Store', 'Contact', 'About'];
 
 function index() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -30,10 +30,10 @@ function index() {
 
   return (
 
-    <AppBar position="static" sx={{background:'teal'}}>
+    <AppBar position="static" sx={{ background: '#0B4E79' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
           <Typography
             variant="h6"
             noWrap
@@ -69,6 +69,7 @@ function index() {
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
+
               }}
               keepMounted
               transformOrigin={{
@@ -88,7 +89,7 @@ function index() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -103,6 +104,7 @@ function index() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+
             }}
           >
             Fitness
@@ -111,15 +113,18 @@ function index() {
             {pages.map((page) => (
               <Button
                 key={page}
+                component="a"
+                href={`${page}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
+                {console.log(page)}
               </Button>
             ))}
           </Box>
 
-         
+
         </Toolbar>
       </Container>
     </AppBar>
