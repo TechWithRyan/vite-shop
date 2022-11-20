@@ -1,14 +1,37 @@
-import React from 'react'
-import Card from '@mui/material/Card';
-import './index.scss'
+import React from 'react';
+import './index.scss';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import A1 from '../../images/A1.jpeg'
 
-function Home() {
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+
+export default function Home() {
   return (
+    <Box sx={{ width: '100%' }}>
 
-    <Card variant="outlined">
-      <div className='headLine'>Hero section from Home</div>
-    </Card>
-  )
+      <Stack spacing={2}>
+        <Item>Home for Good Gains
+        </Item>
+        <Item>
+        <a href="/store">
+        <img src={A1} width="50%" height="50%" />
+        </a>
+        </Item>
+
+
+      </Stack>
+    </Box>
+
+  );
 }
-
-export default Home
