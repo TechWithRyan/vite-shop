@@ -12,7 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import './index.scss'
+
 
 const pages = ['Store', 'Contact', 'About'];
 
@@ -51,6 +53,7 @@ function index() {
           >
             Fitness
           </Typography>
+          
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -89,7 +92,7 @@ function index() {
               ))}
             </Menu>
           </Box>
-
+          
           <Typography
             variant="h5"
             noWrap
@@ -109,6 +112,7 @@ function index() {
           >
             Fitness
           </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -123,7 +127,7 @@ function index() {
               </Button>
             ))}
           </Box>
-
+          <ShoppingBagIcon />
 
         </Toolbar>
       </Container>
