@@ -51,7 +51,7 @@ function index() {
               textDecoration: 'none',
             }}
           >
-            Fitness
+            Good Gains
           </Typography>
           
 
@@ -110,7 +110,7 @@ function index() {
 
             }}
           >
-            Fitness
+            Good Gains
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
