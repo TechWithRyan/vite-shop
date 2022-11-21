@@ -13,6 +13,11 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
+const Img = styled('img')({
+    
+  
+})
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -34,14 +39,15 @@ Information
           <Item>
           <Card className="product" sx={{
                 maxWidth: 345,
-
+                
             }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="100%"
+                        height="140"
                         image="../../images/A1.jpeg"
                         alt="Nike Air Force1"
+                        
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -60,26 +66,30 @@ Information
             </Card>
           </Item>
         </Grid>
+        
+        
         <Grid item xs={4}>
           <Item>
-          <Card className="product" sx={{ maxWidth: 345 }}>
+          <Card className="product" sx={{
+                maxWidth: 345,
+
+            }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="100%"
-                        image="../../images/A2.jpg"
+                        height="140"
+                        image="../../images/A1.jpeg"
                         alt="Nike Air Force1"
-                        
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Aware Nutrition
+                            Nike Airforce 1
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Extra energi vid träning
+                            Clean kicks
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div">
-                            Price: 399 SEK   <ShoppingBagIcon />
+                            Price: 1499 SEK   <ShoppingBagIcon />
                         </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -88,26 +98,27 @@ Information
         </Grid>
         <Grid item xs={4}>
           <Item>
-          <Card className="product" sx={{ maxWidth: 345 }}>
+          <Card className="product" sx={{
+                maxWidth: 345,
+
+            }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="100%"
-                        image="../../images/A3.jpg"
-                        alt="C4 PWO"
-                        
+                        height="140"
+                        image="../../images/A1.jpeg"
+                        alt="Nike Air Force1"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            C4 PWO
+                            Nike Airforce 1
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Extra energi vid träning
+                            Clean kicks
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div">
-                            Price: 399 SEK   <ShoppingBagIcon />
+                            Price: 1499 SEK   <ShoppingBagIcon />
                         </Typography>
-                        
                     </CardContent>
                 </CardActionArea>
             </Card>
