@@ -21,8 +21,8 @@ export default function Home() {
     <Box sx={{ width: '100%' }}>
 
       <Stack spacing={2}>
-        <Item>Home for Good Gains
-        </Item>
+        <h1>Home
+        </h1>
         <Item>
         <a href="/store">
         <img src={A1} width="50%" height="50%" />

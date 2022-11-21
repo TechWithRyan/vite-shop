@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 .headLine {
     font-size: x-large;
     display: flex;
@@ -22,10 +23,39 @@ h1{
 
 body{
     background-color: lightgray;
+    font-family: 'Oswald', sans-serif;
 }
 
 img{
     margin: 'auto';
     display: 'block';
+    
+}
+
+.container{
+    height: 80vh;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: auto;
+}
+
+.left{
+    margin: 0 auto;
+  
+}
+.right{
+    margin: 0 auto;
+ 
+}
+
+.headLine-about{
+    text-align: center;
+    
+}
+
+.headLine-contact{
+    text-align: center;
     
 }
