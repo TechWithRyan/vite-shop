@@ -4,10 +4,17 @@ import './index.scss'
 
 function About() {
     return (
+<div className="product">
+            <h1>About</h1>
 
         <Card variant="outlined">
-            <div className='headLine'>Hero section from About</div>
+            <div className="container">
+            <p>Training & suppliments. We love working out and staying active.</p>
+            <p>Our journey started 2022.</p>
+
+            </div>
         </Card>
+</div>
     )
 }
 
