@@ -39,7 +39,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
+                        height="100%"
                         image="../../images/A1.jpeg"
                         alt="Nike Air Force1"
                     />
@@ -48,7 +48,7 @@ Information
                             Nike Airforce 1
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Clean kicks
+                            Sneakers
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div">
                             Price: 1499 SEK   <ShoppingBagIcon />
@@ -66,7 +66,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
+                        height="100%"
                         image="../../images/A2.jpg"
                         alt="Nike Air Force1"
                         
@@ -92,14 +92,14 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A2.jpg"
-                        alt="Nike Air Force1"
+                        height="100%"
+                        image="../../images/A3.jpg"
+                        alt="C4 PWO"
                         
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Aware Nutrition
+                            C4 PWO
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
                             Extra energi vid träning
