@@ -4,17 +4,13 @@ import './index.scss'
 
 function Contact() {
     return (
-        <div className="produt">
-
-        
-        <h1>
-        Contact
-</h1>
+        <div className="product">
+            <h1>Contact</h1>
         <Card variant="outlined">
 
             <div className="container">
-                <p className="left">Phone: +46 760 581 267</p>
-                <p className="right">Email: ryan.cornelio@gmail.com</p>
+                <p>Phone: +46 760 581 267</p>
+                <p>Email: ryan.cornelio@gmail.com</p>
             </div>
         </Card>
         </div>

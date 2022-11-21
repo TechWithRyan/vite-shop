@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .headLine {
     font-size: x-large;
     display: flex;
     justify-content: center;
 }
 
+a:visited{
+    color:#f7f8f8;
+}
+
+link{
+    color: #0B4E79;
+}
+
 a:hover {
-    color: rgb(127, 44, 221);
+    color: rgb(10, 10, 10);
+    transition: 0.5s;
 }
 
 .product {
@@ -24,30 +34,26 @@ h1{
 body{
     background-color: lightgray;
     font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    width: auto;
 }
 
 img{
     margin: 'auto';
     display: 'block';
-    
+}
+
+.container img{
+    border-radius: 50%;
+    height: 200px;
 }
 
 .container{
-    height: 80vh;
-    font-size: 30px;
+    height: auto;
+    font-size: 25px;
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
-    vertical-align: auto;
-}
-
-.left{
-    margin: 0 auto;
-  
-}
-.right{
-    margin: 0 auto;
- 
 }
 
 .headLine-about{
@@ -59,3 +65,14 @@ img{
     text-align: center;
     
 }
+
+.footer{
+    background-color: #0B4E79;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
