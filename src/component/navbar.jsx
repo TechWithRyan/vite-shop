@@ -16,7 +16,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import './index.scss'
 
 
-const pages = ['Store', 'Contact', 'About'];
+const pages = ['Home', 'Store', 'Contact', 'About'];
 
 function index() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -87,7 +87,24 @@ function index() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center"
+                  
+                  noWrap
+                  component="a"
+                  href={`${page}`}
+                  sx={{
+                  mr: 1,
+                  display: { xs: 'flex', md: 'none' },
+                  flexGrow: 1,
+                  fontFamily: 'monospace',
+                  fontWeight: 700,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+
+            }}
+                  >
+                  {page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
