@@ -20,10 +20,22 @@ a:hover {
 }
 
 .product {
-    padding: 10px;
+    padding: 50px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+}
+
+.about-container{
+    padding: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.contact-container{
+    height: 80vh;
 }
 
 h1{
@@ -36,6 +48,7 @@ body{
     font-family: 'Oswald', sans-serif;
     min-height: 100vh;
     width: auto;
+    margin: 0;
 }
 
 img{
@@ -51,28 +64,22 @@ img{
 .container{
     height: auto;
     font-size: 25px;
-    margin: 0 auto;
     text-align: center;
-    margin: 0 auto;
 }
 
 .headLine-about{
     text-align: center;
-    
 }
 
 .headLine-contact{
     text-align: center;
-    
 }
 
 .footer{
     background-color: #0B4E79;
-    height: auto;
     text-align: center;
     padding: 20px;
-    width: 100%;
-    position: fixed;
     bottom: 0;
+    width: 100%;
 }
 

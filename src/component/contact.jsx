@@ -4,7 +4,7 @@ import './index.scss'
 
 function Contact() {
     return (
-        <div className="product">
+        <div className="contact-container">
             <h1>Contact</h1>
         <Card variant="outlined">
 

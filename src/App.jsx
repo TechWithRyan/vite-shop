@@ -7,8 +7,11 @@ import Contact from './component/contact'
 import About from './component/about'
 import Footer from './component/footer'
 
+
 function App() {
   return (
+    <>
+
     <div>
       <Navbar />
       <Routes>
@@ -18,9 +21,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    <Footer />
     </div>
+    <Footer />
 
+    </>
   );
 }
 
