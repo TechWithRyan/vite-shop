@@ -6,7 +6,7 @@ import Max from '../../images/ryan.jpg'
 
 function About() {
     return (
-<div className="product">
+<div className="about-container">
             <h1>About</h1>
 
         

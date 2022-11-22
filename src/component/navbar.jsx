@@ -32,7 +32,7 @@ function index() {
 
   return (
 
-    <AppBar position="static" sx={{ background: '#0B4E79' }}>
+    <AppBar position="absolute" sx={{ background: '#0B4E79' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
