@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <Box sx={{ width: '100%' }}>
 
-      <Stack spacing={2}>
+      <Stack spacing={2} padding="50px">
         <h1>Home
         </h1>
         <Item>
