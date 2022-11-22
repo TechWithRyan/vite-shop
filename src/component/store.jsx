@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '@mui/material/Card';
 import './index.scss'
-import '../../images/A1.jpeg'
+import A1 from '../../images/A1.jpeg'
 import '../../images/A2.jpg'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -44,8 +44,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                         
                     />
@@ -77,8 +76,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -105,8 +103,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -133,8 +130,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -161,8 +157,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -189,8 +184,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -217,8 +211,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -245,8 +238,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
@@ -273,8 +265,7 @@ Information
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image="../../images/A1.jpeg"
+                        img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
                     />
                     <CardContent>
