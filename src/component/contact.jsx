@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '@mui/material/Card';
 import './index.scss'
+import { styled } from '@mui/material/styles';
 
 function Contact() {
     return (

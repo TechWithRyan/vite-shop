@@ -18,7 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Home() {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%' }} height="100vh">
 
       <Stack spacing={2} padding="50px">
         <h1>Home

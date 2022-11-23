@@ -9,15 +9,14 @@ import Container from '@mui/material/Container';
 
 function Footer() {
   return (
+    
 
   
     <AppBar sx={{ background: '#0B4E79' }} 
-    position="static" 
-    justify-content="center" 
-    justify-items="center"
-    height="40px"
+    position="static"
     >
-      <Container className="footer">
+      <div className="footer"      
+      >
 
 
         <a href="/">
@@ -29,8 +28,8 @@ function Footer() {
         <a href="/">
             <YouTubeIcon sx={{ fontSize: 35 }} />
         </a>
-      
-      </Container>
+    
+      </div>
     </AppBar>
 
   )
