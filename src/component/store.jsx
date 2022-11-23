@@ -30,7 +30,7 @@ function Store() {
     return (
 <div className="product"> 
 <h1>
-Information
+Store
 </h1>
             
         <Box>
@@ -159,6 +159,7 @@ Information
                         component="img"
                         img src={A1} width="50%" height="50%"
                         alt="Nike Air Force1"
+                        
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
