@@ -1,9 +1,7 @@
-import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import styled from "styled-components";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import Ryan from '../../images/ryan.jpg'
 
 const Circle = styled.div`
     width: 100px;

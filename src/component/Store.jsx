@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { products } from '../data';
-import Stores from './Stores';
+import Products from './Products';
 
 const Container = styled.div`
     padding: 20px;
@@ -9,15 +9,15 @@ const Container = styled.div`
     justify-content: space-between;
 `;
 
-const Stores = () => {
+const Store = () => {
     return (
         <Container>
 
-        {stores.map((item) => (
-            <Store item={item} key={item.id} />
+        {products.map((item) => (
+            <Products item={item} key={item.id} />
         ))}
         </Container>
     );
 };
 
-export default Stores;
+export default Store;
