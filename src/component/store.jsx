@@ -1,299 +1,90 @@
 import React from 'react'
-import Card from '@mui/material/Card';
-import './index.scss'
-import A1 from '../../images/A1.jpeg'
-import '../../images/A2.jpg'
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import SearchIcon from '@mui/icons-material/Search';
+import styled from "styled-components";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Ryan from '../../images/ryan.jpg'
 
-const Img = styled('img')({
-    
-  
-})
+const Circle = styled.div`
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+`;
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
+const Icon = styled.div`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: black;
+        transform: scale(1.1);
 
-function Store() {
-    return (
-<div className="product"> 
-<h1>
-Store
-</h1>
-            
-        <Box>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-                
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                        
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Sneakers
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                       
+    }
+`;
 
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        
-        
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
+const Image = styled.img`
+    height: 75%;
+    z-index: 2;
 
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
+`;
 
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
+const Info = styled.div`
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.5s ease;
+`;
 
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                        
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-          <Card className="product" sx={{
-                maxWidth: 345,
-
-            }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        img src={A1} width="50%" height="50%"
-                        alt="Nike Air Force1"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Nike Airforce 1
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Clean kicks
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Price: 1499 SEK   <ShoppingBagIcon />
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-          </Item>
-        </Grid>
-      </Grid>
-    </Box>
-</div>
-
-            
-            
+const Container = styled.div`
+    flex: 1;
+    margin: 5px;
+    min-width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    &:hover${Info} {
+        opacity: 1;
+    }
+`;
 
 
-        
-    )
-}
+const Store = ({item}) => {
+    return(
+    <Container>
+        <Circle />
+        <Image src={item.img} />
+            <Info>
+                <Icon>
+                    <AddShoppingCartIcon />
+                </Icon>
+                <Icon>
+                    <SearchIcon />
+                </Icon>
+                <Icon>
+                    <FavoriteBorderIcon />
+                </Icon>
+            </Info>
+    </Container>
+        );
+};
 
-export default Store
+
+export default Store;

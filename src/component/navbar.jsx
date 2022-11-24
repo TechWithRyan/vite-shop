@@ -16,7 +16,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import './index.scss'
 
 
-const pages = ['Home', 'Store', 'Contact', 'About'];
+const pages = ['Home', 'Products', 'Contact', 'About'];
 
 function index() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
