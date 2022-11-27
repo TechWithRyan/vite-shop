@@ -16,6 +16,10 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import './index.scss'
 
 
+const users = [
+  'Signup'
+];
+
 const pages = ['Home', 'Store', 'Contact', 'About'];
 
 function index() {
@@ -107,6 +111,33 @@ function index() {
                   {page}</Typography>
                 </MenuItem>
               ))}
+
+            {users.map((page) => (
+
+              <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"
+                  
+                  noWrap
+                  component="a"
+                  href={`${page}`}
+                  sx={{
+                  mr: 1,
+                  display: { xs: 'flex', md: 'none' },
+                  flexGrow: 1,
+                  fontFamily: 'monospace',
+                  fontWeight: 700,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+
+            }}
+                  >
+                  {page}</Typography>
+                </MenuItem>
+
+
+            ))}
+
             </Menu>
           </Box>
           
@@ -140,12 +171,25 @@ function index() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
-                {console.log(page)}
               </Button>
             ))}
           </Box>
-          <ShoppingBagIcon />
-
+          
+        
+        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+            {users.map((page) => (
+              <Button
+                key={page}
+                component="a"
+                href={`${page}`}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+        <ShoppingBagIcon />
         </Toolbar>
       </Container>
     </AppBar>
