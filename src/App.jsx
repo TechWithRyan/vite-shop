@@ -6,6 +6,8 @@ import Home from './component/home'
 import Contact from './component/contact'
 import About from './component/about'
 import Footer from './component/footer'
+import Signup from './component/Signup'
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="/Store" element={<Store />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     <Footer />
     </div>
