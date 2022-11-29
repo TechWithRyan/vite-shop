@@ -1,9 +1,6 @@
+import React from 'react'
 import styled from 'styled-components';
 
-const Agreement = styled.span`
-  font-size:18px;
-  margin: 20px;
-`;
 
 const Button = styled.button`
   width: 40%;
@@ -15,15 +12,17 @@ const Button = styled.button`
 
 const Input = styled.input`
   flex: 1;
-  height: 30px;
   min-width: 40%;
   margin: 20px 20px 0px 0px;
+  height: 30px;
     `;
 
 const Wrapper = styled.div`
-  width: 40%;
-  padding: 20px;
+  padding: 40px;
   background-color: gray;
+  height: 300px;
+  margin: 0 auto;
+
 `;
 
 const Container = styled.div`
@@ -33,6 +32,7 @@ const Container = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
+  background-color: #fff;
 `;
 
 const Form = styled.form`
@@ -47,24 +47,32 @@ const Title = styled.h1`
   padding: 30px;
 `;
 
-const Signup = () => {
+const Link = styled.a`
+    margin: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+`;
+
+const Login = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>Signup</Title>
+        <Title>Login</Title>
         <Form>
-          <Input placeholder="Name"/>
-          <Input placeholder="Last name"/>
+
           <Input placeholder="Username"/>
-          <Input placeholder="Email"/>
-          <Input placeholder="Password" type="password"/>
-          <Input placeholder="Confirmed password" type="password"/>
+          <Input placeholder="Password"/>
           <Button>Go</Button>
-          <Agreement>By creating account I consent to the processing of my personal information!</Agreement>
+          <Link>Forgot Password?</Link>
+          <Link>New Account</Link>
+          
         </Form>
       </Wrapper>
     </Container>
   );
 };
 
-export default Signup
+export default Login
+
+

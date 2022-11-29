@@ -17,7 +17,7 @@ import './index.scss'
 
 
 const users = [
-  'Signup'
+  'Signup', 'Login'
 ];
 
 const pages = ['Home', 'Store', 'Contact', 'About'];
@@ -76,8 +76,9 @@ function index() {
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
-
+                
               }}
+              
               keepMounted
               transformOrigin={{
                 vertical: 'top',
@@ -85,12 +86,13 @@ function index() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
+              
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} 
+
+                onClick={handleCloseNavMenu}
+                sx={{ background: '#0B4E79' }}>
                   <Typography textAlign="center"
                   
                   noWrap
@@ -103,7 +105,6 @@ function index() {
                   fontFamily: 'monospace',
                   fontWeight: 700,
                   letterSpacing: '.3rem',
-                  color: 'inherit',
                   textDecoration: 'none',
 
             }}
@@ -114,7 +115,9 @@ function index() {
 
             {users.map((page) => (
 
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
+              <MenuItem key={page} onClick={handleCloseNavMenu}
+              sx={{ background: '#0B4E79'}}
+              >
                   <Typography textAlign="center"
                   
                   noWrap
@@ -129,6 +132,7 @@ function index() {
                   letterSpacing: '.3rem',
                   color: 'inherit',
                   textDecoration: 'none',
+                  
 
             }}
                   >
