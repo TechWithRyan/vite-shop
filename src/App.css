@@ -1,0 +1,35 @@
+.cart-container{
+    background-color: white;
+}
+
+.cart-wrapper{
+    padding: 50px;
+    width: 900px;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.cart-title{
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cart-item{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: rgba(94, 91, 91, 0.856);
+}
+
+.cart-thumbnail{
+    /* width: 250px;
+    height: 150px; */
+}
+.cart-product{
+    margin-left: 30px;
+}
+.cart-price{
+
+}
