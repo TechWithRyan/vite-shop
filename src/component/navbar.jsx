@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import './index.scss'
+
 
 
 const users = [
@@ -21,6 +21,8 @@ const users = [
 ];
 
 const pages = ['Home', 'Store', 'Contact', 'About'];
+
+const cart = ['Cart'];
 
 function index() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -193,7 +195,26 @@ function index() {
               </Button>
             ))}
           </Box>
-        <ShoppingBagIcon />
+            {}
+            {cart.map((page) => (
+              <Button
+                key={page}
+                component="a"
+                href={`${page}`}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+          <ShoppingBagIcon>
+
+                {page}
+          </ShoppingBagIcon>
+              </Button>
+            ))}
+         
+
+        
+            
+  
         </Toolbar>
       </Container>
     </AppBar>
