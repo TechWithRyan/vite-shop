@@ -29,7 +29,30 @@
 }
 .cart-product{
     margin-left: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cart-description{
+    margin: 10px;
 }
 .cart-price{
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-size: 22px;
+}
 
+.main-container{
+    
+}
+
+.cart-thumbnail img{
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
