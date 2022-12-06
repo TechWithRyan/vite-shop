@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 
 
 const users = [
@@ -41,7 +41,14 @@ function index() {
     <AppBar position="absolute" sx={{ background: '#0B4E79' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-
+        <SportsBasketballIcon  
+        sx={{ display: 'flex', 
+        alignItems: 'center', 
+        margin: '10px',
+        fontSize: '30px'
+          }} 
+          
+        />
           <Typography
             variant="h6"
             noWrap
@@ -56,8 +63,10 @@ function index() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            
           >
             Good Gains
+
           </Typography>
           
 
@@ -164,7 +173,9 @@ function index() {
 
             }}
           >
+
             Good Gains
+          
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
