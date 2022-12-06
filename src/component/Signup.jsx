@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: gray;
+  margin: 30px;
 `;
 
 const Container = styled.div`

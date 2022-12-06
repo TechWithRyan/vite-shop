@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const Button = styled.button`
-  width: 40%;
+  width: 20%;
   border: 1px solid;
   margin: 0 auto;
   margin-top: 20px ;
@@ -13,7 +13,7 @@ const Button = styled.button`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 20px 20px 0px 0px;
+  margin: 20px;
   height: 30px;
     `;
 
@@ -62,9 +62,9 @@ const Login = () => {
         <Form>
 
           <Input placeholder="Username"/>
-          <Input placeholder="Password"/>
-          <Button>Go</Button>
+          <Input placeholder="Password" type="password"/>
           <Link>Forgot Password?</Link>
+          <Button>Go</Button>
           <Link>New Account</Link>
           
         </Form>
