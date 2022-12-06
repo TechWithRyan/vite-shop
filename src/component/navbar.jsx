@@ -20,7 +20,7 @@ const users = [
   'Signup', 'Login'
 ];
 
-const pages = ['Home', 'Store', 'Contact', 'About'];
+const pages = ['Store', 'Contact', 'About'];
 
 const cart = ['Cart'];
 
