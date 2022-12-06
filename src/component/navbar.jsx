@@ -65,7 +65,7 @@ function index() {
             }}
             
           >
-            Good Gains
+            Good Game
 
           </Typography>
           
@@ -174,7 +174,7 @@ function index() {
             }}
           >
 
-            Good Gains
+            Good Game
           
           </Typography>
           
