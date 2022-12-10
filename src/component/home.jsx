@@ -13,9 +13,14 @@ function Home(){
 return (
 
   <Box>
+        <section className="hero-image">
+          <h1>Welcome to Good Game!</h1>
+          <p className='hero-p'>We're just getting started</p>
+        </section>
+        
     <Grid container justifyContent = 'center'>
       <Grid>
-        <div className="main-top">
+        {/* <div className="main-top">
           <div className="main-header">Home</div>
           <div className=""><img src={A1} alt="shoes" /></div> 
         </div>      
@@ -23,7 +28,7 @@ return (
           {newProduct.map((item) =>(
             <Products item = {item} key={item.id} />
           ))}
-        </div>
+        </div> */}
 
 
           
