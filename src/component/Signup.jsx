@@ -24,7 +24,9 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: gray;
-  margin: 30px;
+  margin-top: 40px;
+  height: 50%;
+
 `;
 
 const Container = styled.div`
@@ -50,6 +52,7 @@ const Title = styled.h1`
 
 const Signup = () => {
   return (
+    <section className="hero-image">
     <Container>
       <Wrapper>
         <Title>Signup</Title>
@@ -65,6 +68,7 @@ const Signup = () => {
         </Form>
       </Wrapper>
     </Container>
+ </section>
   );
 };
 
