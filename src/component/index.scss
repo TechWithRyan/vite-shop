@@ -31,12 +31,14 @@ a:hover {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    background-color:#0B4E79;
 }
 
 
 .contact-container{
     height: 80vh;
     padding: 50px;
+    
 }
 
 h1{
@@ -65,6 +67,13 @@ img{
     height: auto;
     font-size: 25px;
     text-align: center;
+    background-color: white;
+    
+}
+
+.contact-container{
+    background-color: #0B4E79;
+    height: auto;
 }
 
 .headLine-about{

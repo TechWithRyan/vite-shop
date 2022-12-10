@@ -6,6 +6,9 @@ import { styled } from '@mui/material/styles';
 function Contact() {
     return (
         <div className="contact-container">
+        <section className="hero-image">
+         
+       
             <h1>Contact</h1>
         <Card variant="outlined">
 
@@ -14,7 +17,8 @@ function Contact() {
                 <p>Email: ryan.cornelio@gmail.com</p>
             </div>
         </Card>
-        </div>
+        </section>
+        </div> 
     )
 }
 

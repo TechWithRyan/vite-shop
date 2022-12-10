@@ -7,6 +7,7 @@ import Max from '../../images/ryan.jpg'
 function About() {
     return (
 <div className="about-container">
+<section className="hero-image">
             <h1>About</h1>
 
         
@@ -17,6 +18,7 @@ function About() {
             
 
             </div>
+        </section>
 
 </div>
     )

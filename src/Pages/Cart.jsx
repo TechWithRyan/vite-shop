@@ -5,7 +5,7 @@ import A1 from '../../images/A1.jpeg'
 function Cart() {
   return (
 
-    <div className="cart-container">
+    <div className="cart-container hero-image">
       <div className="cart-wrapper">
         <div className="cart-title">Cart</div>
         <div className="cart-item">

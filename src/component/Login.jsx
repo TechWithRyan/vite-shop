@@ -56,7 +56,8 @@ const Link = styled.a`
 
 const Login = () => {
   return (
-    <Container>
+
+    <Container className='hero-image'>
       <Wrapper>
         <Title>Login</Title>
         <Form>
@@ -70,6 +71,7 @@ const Login = () => {
         </Form>
       </Wrapper>
     </Container>
+
   );
 };
 
