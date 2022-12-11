@@ -21,17 +21,17 @@ const Input = styled.input`
     `;
 
 const Wrapper = styled.div`
-  width: 40%;
+  width: 100%;
   padding: 20px;
   background-color: gray;
   margin-top: 40px;
-  height: 50%;
+  height: 70%;
 
 `;
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   display: flex;
   align-item: center;
