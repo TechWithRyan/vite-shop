@@ -20,13 +20,13 @@ const Input = styled.input`
 const Wrapper = styled.div`
   padding: 40px;
   background-color: gray;
-  height: 300px;
+  height: 50%;
   margin: 0 auto;
-
+  margin-top: 20px;
 `;
 
 const Container = styled.div`
-  width: 100vw;
+
   height: 100vh;
   background-size: cover;
   display: flex;
