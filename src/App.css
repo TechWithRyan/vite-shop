@@ -5,7 +5,7 @@
 
 .cart-wrapper{
     padding: 10px;
-    width: 100%;
+    width: auto;
     background-color: grey;
     margin: 0 auto;
 }
@@ -71,4 +71,29 @@
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+@media (max-width: 600px) {
+    .cart-wrapper {
+      display:flex;
+      flex-direction: column;
+    }
+    .cart-thumbnail{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;        
+    }
+    .cart-thumbnail img {
+        max-width: 250px;
+    }
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column
+    }
+    }
+  
 
