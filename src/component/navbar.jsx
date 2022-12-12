@@ -66,7 +66,6 @@ function index() {
             
           >
             Good Game
-
           </Typography>
           
 
@@ -173,9 +172,7 @@ function index() {
 
             }}
           >
-
             Good Game
-          
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
