@@ -9,9 +9,7 @@ import './index.scss'
 function About() {
     return (
         <Box>
-
             <Grid>
-
                 <div className="about-container">
                     <section className="hero-image">
                         <Grid container justifyContent='center'>

@@ -23,7 +23,7 @@ const Input = styled.input`
 const Wrapper = styled.div`
   width: 100%;
   padding: 20px;
-  background-color: gray;
+  background-color: lightgrey;
   margin-top: 40px;
   height: 70%;
 
