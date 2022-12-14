@@ -27,7 +27,7 @@ a:hover {
 }
 
 .about-container{
-    padding: 50px;
+    padding: 5px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ body{
 }
 
 img{
-    margin: 'auto';
+    margin-top: 'auto';
     display: 'block';
 }
 
@@ -65,9 +65,9 @@ img{
 
 .container{
     height: auto;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    background-color: white;
+    color: white;
 }
 
 .contact-container{
@@ -83,28 +83,6 @@ img{
     text-align: center;
 }
 
-.footer{
-    background-color: #0B4E79;
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
-    width: auto;
-    justify-content: space-around;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-}
-
-.footer a{
-    margin: 0 auto;
-    padding: 30px;
-}
-
-
-
 /* The hero image */
 .hero-image {
   padding: 60px;
@@ -117,6 +95,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 2;
 }
 
 /* Place text in the middle of the image */
@@ -142,4 +121,10 @@ img{
     .cart-container{
         display: flex;
     }
+}
+
+.myphoto{
+    width: 20%;
+    border-radius: 50%;
+    margin: 0;
 }
