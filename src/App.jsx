@@ -1,15 +1,16 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import Navbar from './component/navbar'
+import Navbar from './component/Navbar/Navbar'
 import Store from './component/Store'
 import Home from './component/home'
 import Contact from './component/contact'
 import About from './component/about'
-import Footer from './component/footer'
+import Footer from './component/Footer/footer'
 import Signup from './component/Signup'
 import Login from './component/Login'
 import Products from './Pages/Products'
 import Cart from './Pages/Cart'
+import { Toolbar } from '@mui/material';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Store" element={<Store />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart />} />

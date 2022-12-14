@@ -1,26 +1,35 @@
 import React from 'react'
 import Card from '@mui/material/Card';
-import './index.scss'
 import Ryan from '../../images/ryan.jpg'
 import Max from '../../images/ryan.jpg'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import './index.scss'
 
 function About() {
     return (
-<div className="about-container">
-<section className="hero-image">
-            <h1>About</h1>
+        <Box>
 
-        
-            <div className="container">
-            <p>Training & suppliments. We love working out and being active.</p>
-            <p>Our journey started 2022.</p>
-                <div><img src={Ryan} width="auto" alt="Photo of me"/><br /> Ryan-Phillips Iserhills Cornelio <br /> <i>Web development in E-commerce</i><br /> Hi. I'm Ryan. I live in Kungälv. <br /> I'm now looking for work where I can further expand my knowledge in web development. <br />Hope to hear from you. All the best, -Ryan. </div>
-            
+            <Grid>
 
-            </div>
-        </section>
+                <div className="about-container">
+                    <section className="hero-image">
+                        <Grid container justifyContent='center'>
 
-</div>
+                            <h1>About</h1>
+                            <img src={Ryan} className="myphoto"></img>
+                            <div>
+                                <p>Training & suppliments. We love working out and being active.</p>
+                                <p>Our journey started 2022.</p>
+                                <div><br /> Ryan-Phillips Iserhills Cornelio <br /> <i>Web development in E-commerce</i><br /> Hi. I'm Ryan. I live in Kungälv. <br /> I'm now looking for work where I can further expand my knowledge in web development. <br />Hope to hear from you. All the best, -Ryan. </div>
+
+                            </div>
+                        </Grid>
+                    </section>
+
+                </div>
+            </Grid>
+        </Box>
     )
 }
 
