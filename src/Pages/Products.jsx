@@ -62,7 +62,7 @@ const Image = styled.img`
 // <img src={A4} alt="shoes"></img>
 function Products() {
   return (
-    <Container>
+    <Container className="hero-image">
         <Wrapper>
             <ImageContainer> 
                 <Image src="https://m.media-amazon.com/images/I/9121sOnPM3L._AC_UY606_.jpg" />

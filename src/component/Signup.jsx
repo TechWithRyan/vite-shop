@@ -23,7 +23,7 @@ const Input = styled.input`
 const Wrapper = styled.div`
   width: 100%;
   padding: 20px;
-  background-color: gray;
+  background-color: lightgray;
   margin-top: 40px;
   height: 70%;
 
@@ -46,7 +46,7 @@ const Form = styled.form`
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   padding: 30px;
 `;
 
