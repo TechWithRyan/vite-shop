@@ -10,23 +10,27 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
   }
-
+  
+  const hide = () => setShowNavbar(false);
+  const show = () => setShowNavbar(true);
+  
   return (
     <nav className="navbar">
       <div className="container">
         <div className="logo"><SportsBasketball /></div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
+        <div className="menu-icon" onClick={handleShowNavbar} onBlur={hide} onFocus={show}>
+    {console.log(handleShowNavbar)}
         <SportsBasketball />
         </div>
         <div className={`nav-elements ${showNavbar && 'active'}`}>
         
         <ul>
-          <li><NavLink to="/"  >Home</NavLink></li>
-          <li><NavLink to="/About"  >About</NavLink></li>
-          <li><NavLink to="/Store" >Store</NavLink></li>
-          <li><NavLink to="/Products"  >Products</NavLink></li>
-          <li><NavLink to="/Signup"  >Signup</NavLink></li>
-          <li><NavLink to="/Login"  >Login</NavLink></li>
+          <li><NavLink to="/" onBlur={hide} onFocus={show}>Home</NavLink></li>
+          <li><NavLink to="/About" onBlur={hide} onFocus={show}>About</NavLink></li>
+          <li><NavLink to="/Store" onBlur={hide} onFocus={show}>Store</NavLink></li>
+          <li><NavLink to="/Products" onBlur={hide} onFocus={show}>Products</NavLink></li>
+          <li><NavLink to="/Signup" onBlur={hide} onFocus={show}>Signup</NavLink></li>
+          <li><NavLink to="/Login" onBlur={hide} onFocus={show}>Login</NavLink></li>
         </ul>
 
         </div>
