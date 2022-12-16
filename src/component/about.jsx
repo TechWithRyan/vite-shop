@@ -12,7 +12,7 @@ function About() {
 
             <Grid>
 
-                <div className="about-container">
+                <div>
                     <section className="hero-image">
                         <Grid container justifyContent='center'>
 
