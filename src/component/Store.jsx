@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { products } from '../data';
 import Products from './Products';
+import './index.scss';
 
 const Container = styled.div`
     padding: 20px;
@@ -12,7 +13,7 @@ const Container = styled.div`
 
 const Store = () => {
     return (
-        <Container>
+        <Container className="hero-image">
 
         {products.map((item) => (
             <Products item={item} key={item.id} />

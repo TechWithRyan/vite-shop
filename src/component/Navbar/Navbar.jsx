@@ -19,7 +19,6 @@ const Navbar = () => {
       <div className="container">
         <div className="logo"><SportsBasketball /></div>
         <div className="menu-icon" onClick={handleShowNavbar} onBlur={hide} onFocus={show}>
-    {console.log(handleShowNavbar)}
         <SportsBasketball />
         </div>
         <div className={`nav-elements ${showNavbar && 'active'}`}>
