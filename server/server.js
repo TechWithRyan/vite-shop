@@ -1,24 +1,50 @@
-const express = require('express');
-const cors = require('cors');
+import express from "express"
+import mysql from "mysql"
+import cors from "cors";
 
 const app = express();
-var corsOptions = {
-    origin: "http://localhost:8081"
-};
-
-app.use(cors(corsOptions));
-
+app.use(cors());
 app.use(express.json());
 
-app.use(express.urlencoded({
-    extend: true
-}));
+const db = mysql.createConnection({
+    host : 'localhost',
+    user: 'root',
+    password: '1291@Mysql',
+    database: 'database'
+})
+
+
 
 app.get('/', (req, res) => {
     res.json({message: 'My server is running...'});
 });
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log('Server listening on port ${PORT}');
+app.post('/products', (req, res) => {
+
+    const q = "INSERT INTO products(`Title`, `Description`)VALUES(?)";
+    const values = [req.body.title, req.body.description];
+
+    db.query(q, [values],(err, data) => {
+        if (err) 
+          return res.json(err);
+
+        return res.json("Vi har lagt in en produkt"); 
+    })
+
+})
+
+app.get("/products", (req, res) => {
+    const q = "SELECT * FROM products";
+    db.query(q, (err, data) => {
+        if (err) {
+          console.log(err);
+          return res.json(err);
+        }
+        return res.json(data);
+      });
+    });
+
+
+app.listen(8080, () => {
+    console.log('Servern är igång...');
 });
