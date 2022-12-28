@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { products } from '../data';
-import Products from './Products';
 import './index.scss';
+import axios from "axios";
+import React, { useState, useEffect } from 'react';
 
 const Container = styled.div`
     padding: 20px;
@@ -11,15 +11,41 @@ const Container = styled.div`
     margin-top: 50px;
 `;
 
-const Store = () => {
+
+
+function Store (){
+    const [product, setProduct] = useState([])
+useEffect(() => {
+    const fetchAllProducts = async () => {
+        try{
+            const res = await axios.get('http://localhost:8080/products')
+            setProduct(res.data)
+        } catch(err) {
+            console.log(err)
+        }
+    }
+    fetchAllProducts();
+    
+},[])
     return (
+        <div>
+        
         <Container className="hero-image">
 
-        {products.map((item) => (
-            <Products item={item} key={item.id} />
+        {products.map((products) => (
+            <>
+
+            <div key={products.key} />
+            <div>{products.title}</div>
+            <div>{products.description}</div>
+            </>
+
         ))}
         </Container>
+        </div>
     );
 };
+
+
 
 export default Store;
