@@ -30,7 +30,7 @@ a:hover {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    background-color:#0B4E79;
+    background-color:transparent;
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ body{
     background: url('/images/gym.jpg');
     background-size: cover;
     background-position: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'roboto', sans-serif;
     width: auto;
     margin: 0 auto;
 }
@@ -73,7 +73,7 @@ img{
 }
 
 .contact-container{
-    background-color: #0B4E79;
+    background-color: transparent;
     height: auto;
 }
 
@@ -88,11 +88,7 @@ img{
 
 .hero-image {
   padding: 60px;
-  background-image:  url("/images/gym.jpg");
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 2;
 }

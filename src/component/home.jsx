@@ -18,23 +18,6 @@ return (
           <p className='hero-p'>We're just getting started</p>
         </section>
         
-    <Grid container justifyContent = 'center'>
-      <Grid>
-        {/* <div className="main-top">
-          <div className="main-header">Home</div>
-          <div className=""><img src={A1} alt="shoes" /></div> 
-        </div>      
-        <div className="main-new-product">
-          {newProduct.map((item) =>(
-            <Products item = {item} key={item.id} />
-          ))}
-        </div> */}
-
-
-          
-        
-      </Grid>
-    </Grid>
     </Box>
 
   );
