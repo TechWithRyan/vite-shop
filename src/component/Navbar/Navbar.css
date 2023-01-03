@@ -73,6 +73,7 @@
         position: absolute;
         right: 0;
         top: 60px;
+        border-radius: 1%;
         background-image:url("/images/gym.jpg");
         background-position: center;
         background-size: cover;

@@ -1,14 +1,10 @@
 import styled from "styled-components";
-import './index.scss';
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
-
+import './Store.css';
 
 const Container = styled.div`
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
 `;
 
 
@@ -29,23 +25,20 @@ useEffect(() => {
 },[])
 console.log(product)
     return (
-        <div>
-        
-        <Container className="hero-image">
-
+        <div className="box">
         {product.map((product) => (
             <>
-
-            <div key={product.Key} />
-            <div>{product.Title}</div>
-            <div>{product.Description}</div>
-            <div>{product.Price}</div>
-            <div><img src={product.Img} alt="training shoes" width="50%"/></div>
-
+            <div className="box-1">
+                <div key={product.Key} />
+            
+            <div className="title">{product.Title}</div>
+            <div><img className="image" src={product.Img} alt="training shoes"/></div>
+            <div className="description">{product.Description}</div>
+            <div className="price">{product.Price} SEK</div>
+            </div>
             </>
 
         ))}
-        </Container>
         </div>
     );
 };

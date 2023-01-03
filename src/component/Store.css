@@ -1,0 +1,42 @@
+.image {
+    width: 200px;
+    height: 200px;
+/*     border: 2px solid red; */
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    flex-wrap: wrap;
+/*     border: 2px solid green; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-1 {
+    width: 30%;
+/*     border: 2px solid tomato; */
+    height: 10%;
+    margin: 0 auto;
+}

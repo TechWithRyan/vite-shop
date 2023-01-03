@@ -13,7 +13,7 @@ const Input = styled.input`
   flex: 1;
   min-width: 40%;
   margin: 20px;
-  height: 30px;
+  height: 40px;
     `;
 
 const Wrapper = styled.div`
