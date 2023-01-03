@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import "./Signup.css"
+import { Link } from '@mui/material';
+import { NavLink } from 'react-router-dom'
 
 const Agreement = styled.span`
   font-size:18px;
@@ -48,9 +50,10 @@ const Signup = () => {
           <Input placeholder="Username" type="email" autocomplete="off" className="email" required/>
           <Input placeholder="Password" type="password" type="password" required/>
           <button className='submit-btn'>Register</button>
-          <a href="/public/js/login.html" class="link">Already a member? Login here</a>
-          <Agreement className='heading'>By creating account I consent to the processing of my personal information!</Agreement>
+          
         </Form>
+          <Link to="/Login.jsx">Already a member? Login here</Link>
+          <Agreement className='heading'>By creating account I consent to the processing of my personal information!</Agreement>
       </Wrapper>
     </Container>
  </section>

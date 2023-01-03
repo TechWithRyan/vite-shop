@@ -1,0 +1,16 @@
+.hero-image {
+    padding: 60px;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero {
+    background-color: rgb(19, 139, 245);
+    height: 30vh;
+    width: 500px;
+}
+
+h1 p {
+    color: black;
+}

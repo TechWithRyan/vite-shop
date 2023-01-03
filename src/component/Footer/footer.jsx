@@ -12,21 +12,20 @@ function Footer() {
     
 
   
-    <AppBar sx={{ background: '#0B4E79' }} 
-    position="static"
+    <AppBar position="static"
     >
       <div className="footer"      
       >
 
 
         <a href="/">
-            <FacebookIcon sx={{ fontSize: 35 }} />
+            <FacebookIcon sx={{ fontSize: 30 }} />
         </a>
         <a href="/">
-            <InstagramIcon sx={{ fontSize: 35 }} />
+            <InstagramIcon sx={{ fontSize: 30 }} />
         </a>
         <a href="/">
-            <YouTubeIcon sx={{ fontSize: 35 }} />
+            <YouTubeIcon sx={{ fontSize: 30 }} />
         </a>
     
       </div>

@@ -4,7 +4,7 @@ import Ryan from '../../images/ryan.jpg'
 import Max from '../../images/ryan.jpg'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import './index.scss'
+import './about.css'
 
 function About() {
     return (
@@ -13,9 +13,9 @@ function About() {
                 <div class="about-container">
                     <section className="hero-image">
                         <Grid className="hero-text">
-                            <h1>About</h1>
                             <img src={Ryan} className="myphoto"></img>
                             <div>
+                                <p>Welcome to our new page. My name is Ryan.</p>
                                 <p>Training & suppliments. We love working out and being active.</p>
                                 <p>Our journey started 2022.</p>
                                 <div><br /> Ryan-Phillips Iserhills Cornelio <br /> <i>Web development in E-commerce</i><br /> Hi. I'm Ryan. I live in Kungälv. <br />
