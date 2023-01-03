@@ -3,6 +3,7 @@ import './index.scss';
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
 
+
 const Container = styled.div`
     padding: 20px;
     display: flex;
@@ -27,17 +28,22 @@ useEffect(() => {
     fetchAllProducts();
     
 },[])
+console.log(product)
+debugger;
     return (
         <div>
         
         <Container className="hero-image">
 
-        {products.map((products) => (
+        {product.map((product) => (
             <>
 
-            <div key={products.key} />
-            <div>{products.title}</div>
-            <div>{products.description}</div>
+            <div key={product.Key} />
+            <div>{product.Title}</div>
+            <div>{product.Description}</div>
+            <div>{product.Price}</div>
+            <div><img src={product.Img} alt="training shoes" width="50%"/></div>
+
             </>
 
         ))}

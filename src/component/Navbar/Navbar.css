@@ -3,7 +3,7 @@
 }
 
 .navbar{
-    background-color:#0B4E79;
+    background-color:transparent;
     height: 60px;
     position: relative;
 }
@@ -23,7 +23,7 @@
 }
 
 .nav-elements{
-    background-color: #0B4E79;
+    background-color: transparent;
 }
 
 .nav-elements ul {

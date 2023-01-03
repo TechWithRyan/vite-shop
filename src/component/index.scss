@@ -47,7 +47,9 @@ h1{
 }
 
 body{
-    background-color: lightgray;
+    background: url('/images/gym.jpg');
+    background-size: cover;
+    background-position: center;
     font-family: 'Oswald', sans-serif;
     width: auto;
     margin: 0 auto;
@@ -86,7 +88,7 @@ img{
 
 .hero-image {
   padding: 60px;
-  background-image:  url("/images/basket.jpg");
+  background-image:  url("/images/gym.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
