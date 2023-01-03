@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   width: 20%;
-  border: 1px solid;
   margin: 0 auto;
   margin-top: 20px ;
   height: 30px;
@@ -19,7 +18,6 @@ const Input = styled.input`
 
 const Wrapper = styled.div`
   padding: 40px;
-  background-color: lightgray;
   height: 50%;
   margin: 0 auto;
   margin-top: 20px;
@@ -32,7 +30,6 @@ const Container = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
-  background-color: #fff;
 `;
 
 const Form = styled.form`
@@ -41,9 +38,9 @@ const Form = styled.form`
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   padding: 30px;
 `;
 
@@ -60,12 +57,12 @@ const Login = () => {
     <Container className='hero-image'>
       <Wrapper>
         <Title>Login</Title>
-        <Form>
+        <Form className='form'>
 
-          <Input placeholder="Username"/>
+          <Input placeholder="Username" class="email"/>
           <Input placeholder="Password" type="password"/>
           <Link>Forgot Password?</Link>
-          <Button>Go</Button>
+          <Button className='submit-btn'>Go</Button>
           <Link>New Account</Link>
           
         </Form>
