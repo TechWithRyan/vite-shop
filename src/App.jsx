@@ -1,16 +1,15 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom";
-import Navbar from './component/Navbar/Navbar'
-import Store from './component/Store'
-import Home from './component/Home'
-import Contact from './component/contact'
-import About from './component/about'
-import Footer from './component/Footer/footer'
-import Signup from './component/Signup'
-import Login from './component/Login'
-import Products from './Pages/Products'
-import Cart from './Pages/Cart'
-import { Toolbar } from '@mui/material';
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
+import About from './component/about';
+import Contact from './component/contact';
+import Footer from './component/Footer/footer';
+import Home from './component/Home';
+import Login from './component/Login';
+import Navbar from './component/Navbar/Navbar';
+import Signup from './component/Signup';
+import Store from './component/Store';
+import Cart from './Pages/Cart';
+import Products from './Pages/Products';
 
 function App() {
   return (
