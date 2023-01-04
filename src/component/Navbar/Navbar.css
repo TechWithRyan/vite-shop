@@ -6,6 +6,8 @@
     background-color:transparent;
     height: 60px;
     position: relative;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .container{
@@ -74,7 +76,7 @@
         right: 0;
         top: 60px;
         border-radius: 1%;
-        background-image:url("/images/gym.jpg");
+        background-color: steelblue;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

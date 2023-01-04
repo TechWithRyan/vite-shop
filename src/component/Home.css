@@ -1,21 +1,51 @@
-.hero-image {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');.hero-image {
     padding: 60px;
     height: 100vh;
     position: relative;
     z-index: 2;
 }
 
-.home-hero {
-    height: 30vh;
-    width: 500px;
-}
 
-h1 p {
+h4 {
     color: black;
+    position: relative;
+    text-transform: uppercase;
 }
 
-.home-hero {
-    height: 20%;
-    margin: 0 auto;
-    padding: 50px;
+.home-text {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;    
+}
+
+.neon {
+    position: absolute;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 0 0 20px #2072ec;
+    text-transform: uppercase;
+}
+
+.neon:after {
+    content: attr(data-text);
+    position: absolute;
+    padding: 0 20px;
+    z-index: -1;
+    color: #0099ff;
+    filter: blur(15px)
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3a88fe;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
 }

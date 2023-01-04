@@ -52,7 +52,7 @@ const Signup = () => {
           <button className='submit-btn'>Register</button>
           
         </Form>
-          <Link to="/Login.jsx">Already a member? Login here</Link>
+        <Link to="/Login.jsx">Already a member? Login here</Link>
           <Agreement className='heading'>By creating account I consent to the processing of my personal information!</Agreement>
       </Wrapper>
     </Container>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 *:focus {
@@ -38,6 +39,7 @@ input,
     padding: 15px;
     transition: .5s;
     text-transform: capitalize;
+    font-size: large;
 }
 
 input::placeholder {
