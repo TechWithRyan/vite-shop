@@ -13,17 +13,17 @@ function Home() {
   return (
 
 
-      <Grid>
-        
-        <section className="home-hero">
-          <h1>Welcome to Good Game.</h1>
-          <p className='hero-p'>We're just getting started.</p>
-        </section>
+    <Grid>
+
+      <span className='home-text'>
+        <h1 data-text="Good Gains" className='neon'>Good Gains</h1>
+        {/* <p>We're just getting started</p> */}
+      </span>
         <button className='submit-btn'>Register</button>
         <button className='submit-btn'>Login</button>
-      </Grid>
+    </Grid>
 
-  
+
 
   );
 }

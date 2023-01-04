@@ -15,12 +15,13 @@ function About() {
                         <Grid className="hero-text">
                             <img src={Ryan} className="myphoto"></img>
                             <div>
+                                <h1>Ryan-Phillips Iserhills Cornelio </h1> <br></br><i>Web development in E-commerce</i><br /> <br />
+                                 </div>
                                 <p>Welcome to our new page. My name is Ryan.</p>
-                                <p>Training & suppliments. We love working out and being active.</p>
-                                <p>Our journey started 2022.</p>
-                                <div><br /> Ryan-Phillips Iserhills Cornelio <br /> <i>Web development in E-commerce</i><br /> Hi. I'm Ryan. I live in Kungälv. <br />
-                                    I'm now looking for work where I can further expand my knowledge in web development. <br />Hope to hear from you. All the best, -Ryan. </div>
-                            </div>
+                                <p>I love working out and being active.</p>
+                                <p>Our journey started 2020.</p>
+                                <p>Wish you all the best, - Ryan.</p>
+                            
                         </Grid>
                     </section>
 

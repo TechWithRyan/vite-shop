@@ -1,5 +1,26 @@
 .about-container {
-    height: 40vh;
+    height: 70vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
     width: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align:center;
+    color: black;
+    height: 80%;
     background-color: aliceblue;
+    border-radius: 0.5%;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .myphoto {
+    width: 20%;
+    border-radius: 50%;
 }

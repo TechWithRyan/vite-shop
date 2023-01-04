@@ -19,12 +19,18 @@ const ImageContainer = styled.div`
 `;
 const Title = styled.h1`
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 `;
 const ItemInfo = styled.div`
     font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 `;
 const PriceContainer = styled.div`
     font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 `;
 const SizeContainer = styled.select`
     margin-left: 10px;
