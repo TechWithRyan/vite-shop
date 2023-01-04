@@ -6,11 +6,16 @@
 }
 
 .home-hero {
-    background-color: rgb(19, 139, 245);
     height: 30vh;
     width: 500px;
 }
 
 h1 p {
     color: black;
+}
+
+.home-hero {
+    height: 20%;
+    margin: 0 auto;
+    padding: 50px;
 }
