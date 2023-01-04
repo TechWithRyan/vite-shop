@@ -65,16 +65,12 @@ function Products() {
     <Container className="hero-image">
         <Wrapper>
             <ImageContainer> 
-                <Image src="https://m.media-amazon.com/images/I/9121sOnPM3L._AC_UY606_.jpg" />
+                <Image src="https://images.unsplash.com/photo-1644661458456-d8ad35f5c9a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNwb3J0cyUyMGhvb2RpZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
             </ImageContainer>
                 <InfoContainer>
-                    <Title>Jul tröja</Title>
+                    <Title>Zip Windbreaker</Title>
                     <ItemInfo>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
-            iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-            tristique tortor pretium ut. Curabitur elit justo, consequat id
-            condimentum ac, volutpat ornare.
+                    Flexible material.
                     </ItemInfo>
                     <PriceContainer>Price 699 kr</PriceContainer>
                     <SizeContainer>

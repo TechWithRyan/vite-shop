@@ -1,5 +1,5 @@
 .image {
-    width: 200px;
+    width: 50%;
     height: 200px;
 /*     border: 2px solid red; */
     flex-direction: column;
@@ -7,36 +7,53 @@
     margin: 0 auto;
 }
 
+.image-box {
+    width: 100%;
+    height: 100%;
+/*     border: 2px solid blue; */
+background-color: aliceblue;
+}
+
+
+
 .title {
     font-size: 20px;
     text-align: center;
     font-weight: 600;
+    background-color: aliceblue;
 }
 
 .description {
     font-size: 20px;
     text-align: center;
+    background-color: aliceblue;
 }
 
 .price {
     font-size: 20px;
     text-align: center;
+    background-color: aliceblue;
 }
 
 .box {
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
     flex-wrap: wrap;
 /*     border: 2px solid green; */
     justify-content: center;
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .box-1 {
     width: 30%;
 /*     border: 2px solid tomato; */
-    height: 10%;
-    margin: 0 auto;
+    height: 30vh;
+    margin: auto;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    width: auto;
 }

@@ -25,21 +25,24 @@ useEffect(() => {
 },[])
 console.log(product)
     return (
-        <div className="box">
-        {product.map((product) => (
+
             <>
+    <div className="hero-image">
+        {product.map((product) => (
             <div className="box-1">
                 <div key={product.Key} />
             
             <div className="title">{product.Title}</div>
-            <div><img className="image" src={product.Img} alt="training shoes"/></div>
+            <div className="image-box"><img className="image" src={product.Img} alt="training shoes"/></div>
             <div className="description">{product.Description}</div>
             <div className="price">{product.Price} SEK</div>
             </div>
-            </>
-
         ))}
         </div>
+    {/* <div className="hero-image-2"></div>
+    <div className="hero-image-3">Part 3</div> */}
+            </>
+
     );
 };
 
