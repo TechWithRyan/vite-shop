@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from '@mui/material/Card';
-import Me1 from '../../images/Me1.jpg'
-import Max from '../../images/ryan.jpg'
+import Me1 from '../../images/me1.jpg'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import './about.css'
