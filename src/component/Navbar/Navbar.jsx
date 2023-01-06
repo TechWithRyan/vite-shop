@@ -4,6 +4,7 @@ import './Navbar.css';
 import { SportsBasketball } from '@mui/icons-material';
 import react from 'react';
 import Logo from '../../../images/logo1.png'
+import Logga from '../../../images/logga.png'
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo"><img src={Logo}></img></div>
+        <div className="logo"><img src={Logga}></img></div>
         <div className="menu-icon" onClick={handleShowNavbar} onBlur={hide} onFocus={show}>
         <SportsBasketball />
         </div>
