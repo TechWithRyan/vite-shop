@@ -9,22 +9,16 @@ import './about.css'
 function About() {
     return (
         <Box>
-            <Grid>
+            <Grid className="grid-style">
                 <div class="about-container">
-                    <section className="hero-image">
-                        <Grid className="hero-text">
-                            <img src={Ryan} className="myphoto"></img>
-                            <div>
-                                <h1>Ryan-Phillips Iserhills Cornelio </h1> <br></br><i>Web development in E-commerce</i><br /> <br />
-                                 </div>
-                                <p>Welcome to the new page. My name is Ryan.</p>
-                                <p>I enjoy working out and being active.</p>
-                                <p>Our journey started 2020.</p>
-                                <p>Wish you all the best, - Ryan.</p>
-                            
-                        </Grid>
-                    </section>
-
+                    <img src={Ryan} className="myphoto"></img>
+                    <h1>Ryan-Phillips Iserhills Cornelio </h1>
+                    <i>Web development in E-commerce</i>
+                    <br />
+                    <p>Welcome to the new page. My name is Ryan.</p>
+                    <p>I enjoy working out and being active.</p>
+                    <p>Our journey started 2020.</p>
+                    <p>Wish you all the best, - Ryan.</p>
                 </div>
             </Grid>
         </Box>

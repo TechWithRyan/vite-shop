@@ -1,36 +1,32 @@
 .about-container {
-  height: 130vw;
+  height: 50vh;
+  width: 40vw;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width: auto;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  
+  padding: 5vw;
+  background-color: #fff;
+}
+
+.grid-style {
+  height: 100%;
 }
 
 /* Place text in the middle of the image */
-.hero-text {
+/* .hero-text {
   text-align: center;
   color: black;
-  height: auto;
+  height: 30vw;
   background-color: aliceblue;
   border-radius: 0.5%;
   font-family: 'Quicksand', sans-serif;
   width: 100%;
-  flex: 1;
-  font-family: 'roboto', sans-serif;
   padding: 20px;
   margin: 0 auto;
-
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+} */
 
 .myphoto {
   width: 20%;
@@ -42,5 +38,14 @@
     height: auto;
     width: 100%;
     cursor: pointer;
+  } 
+  .about-container {
+    width: 100%;
+    height: auto;
+  }
+  .hero-text {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
   }
 }
