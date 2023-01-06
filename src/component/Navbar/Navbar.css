@@ -46,7 +46,7 @@
 }
 
 .nav-elements ul a.active{
-    color: black;
+    color: rgb(246, 250, 248);
     position: relative;
 }
 

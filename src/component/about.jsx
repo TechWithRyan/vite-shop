@@ -19,7 +19,7 @@ function About() {
                     <br />
                     <p>Welcome to the new page. My name is Ryan.</p>
                     <p>I enjoy working out and being active.</p>
-                    <p>Wish you all the best, - Ryan.</p>
+                    <p>Wish you all the best.</p>
                 </div>
 
             </Grid>
