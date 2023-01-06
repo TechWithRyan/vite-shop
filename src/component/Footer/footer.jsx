@@ -9,25 +9,20 @@ import Container from '@mui/material/Container';
 
 function Footer() {
   return (
-    
-
-  
-    <AppBar position="static"
-    >
-      <div className="footer"      
-      >
 
 
+
+    <AppBar position="static">
+      <div className="footer">
         <a href="/">
-            <FacebookIcon sx={{ fontSize: 30 }} />
+          <FacebookIcon sx={{ fontSize: 30 }} />
         </a>
         <a href="/">
-            <InstagramIcon sx={{ fontSize: 30 }} />
+          <InstagramIcon sx={{ fontSize: 30 }} />
         </a>
         <a href="/">
-            <YouTubeIcon sx={{ fontSize: 30 }} />
+          <YouTubeIcon sx={{ fontSize: 30 }} />
         </a>
-    
       </div>
     </AppBar>
 

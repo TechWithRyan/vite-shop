@@ -45,15 +45,15 @@ const Signup = () => {
     <Container>
       <Wrapper>
         <Title className='heading'>Register</Title>
-        <Form>
+        <Form className='form'>
           <Input placeholder="Name" type="text" autocomplete="off" className="name" required/>
           <Input placeholder="Username" type="email" autocomplete="off" className="email" required/>
           <Input placeholder="Password" type="password" type="password" required/>
           <button className='submit-btn'>Register</button>
           
-        </Form>
-        <Link to="/Login.jsx">Already a member? Login here</Link>
+        <Link>Already a member? Login here</Link>
           <Agreement className='heading'>By creating account I consent to the processing of my personal information!</Agreement>
+        </Form>
       </Wrapper>
     </Container>
  </section>
