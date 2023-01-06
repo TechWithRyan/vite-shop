@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '@mui/material/Card';
-import Me1 from '../../images/me1.jpg'
+import Me from '../../images/me1.jpg'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import './about.css'
@@ -13,7 +13,7 @@ function About() {
         <Box>
             <Grid className="grid-style">
                 <div class="about-container">
-                    <img src={Me1} className="myphoto"></img>
+                    <img src={Me} className="myphoto"></img>
                     <h1>Ryan-Phillips Iserhills Cornelio </h1>
                     <i>Web development in E-commerce</i>
                     <br />
