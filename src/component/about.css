@@ -1,26 +1,45 @@
 .about-container {
-    height: 70vh;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  height: 70vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-    text-align:center;
-    color: black;
-    height: 80%;
-    background-color: aliceblue;
-    border-radius: 0.5%;
-    font-family: 'Quicksand', sans-serif;
-  }
+  text-align: center;
+  color: black;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 0.5%;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  flex: 1;
+  font-family: 'roboto', sans-serif;
 
-  .myphoto {
-    width: 20%;
-    border-radius: 50%;
+  margin: 0 auto;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.myphoto {
+  width: 20%;
+  border-radius: 50%;
+}
+
+@media (max-width: 650px) {
+  body, img {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+  }
 }
