@@ -1,10 +1,10 @@
 .about-container {
-  height: 25vw;
+  height: 130vw;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width: 40%;
+  width: auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
