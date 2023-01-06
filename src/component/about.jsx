@@ -18,7 +18,7 @@ function About() {
                                 <h1>Ryan-Phillips Iserhills Cornelio </h1> <br></br><i>Web development in E-commerce</i><br /> <br />
                                  </div>
                                 <p>Welcome to the new page. My name is Ryan.</p>
-                                <p>I love working out and being active.</p>
+                                <p>I enjoy working out and being active.</p>
                                 <p>Our journey started 2020.</p>
                                 <p>Wish you all the best, - Ryan.</p>
                             
