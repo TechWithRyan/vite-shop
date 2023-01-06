@@ -48,7 +48,7 @@ const Signup = () => {
         <Form className='form'>
           <Input placeholder="Name" type="text" autocomplete="off" className="name" required/>
           <Input placeholder="Username" type="email" autocomplete="off" className="email" required/>
-          <Input placeholder="Password" type="password" type="password" required/>
+          <Input placeholder="Password" type="password" required/>
           <button className='submit-btn'>Register</button>
           
         <Link>Already a member? Login here</Link>
