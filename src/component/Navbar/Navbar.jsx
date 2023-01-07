@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.css';
 import { SportsBasketball } from '@mui/icons-material';
 import react from 'react';
-import Logo from '../../../images/logo1.png'
+import Ball from '../../../images/bball.png'
 import Logga from '../../../images/logga.png'
 
 const Navbar = () => {
@@ -20,8 +20,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo"><img src={Logga}></img></div>
-        <div className="menu-icon" onClick={handleShowNavbar} onBlur={hide} onFocus={show}>
-        <SportsBasketball />
+        <div className="menu-icon" onClick={handleShowNavbar} onBlur={hide} onFocus={show}>   
+        <img src={Ball} />
         </div>
         <div className={`nav-elements ${showNavbar && 'active'}`}>
         
