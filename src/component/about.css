@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;1,200;1,600&display=swap');
+
 .about-container {
   height: 40vh;
   width: 40vw;
@@ -11,24 +13,17 @@
   color: aliceblue;
   font-weight: 500;
   font-size: 20px;
+  font-family: 'Urbanist', sans-serif;
 } 
+
+h1 {
+  font-family: 'Urbanist', sans-serif;
+}
 
 .grid-style {
   height: 100%;
+  font-family: 'Urbanist', sans-serif;
 }
-
-/* Place text in the middle of the image */
-/* .hero-text {
-  text-align: center;
-  color: black;
-  height: 30vw;
-  background-color: aliceblue;
-  border-radius: 0.5%;
-  font-family: 'Quicksand', sans-serif;
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-} */
 
 .myphoto {
   width: 20%;

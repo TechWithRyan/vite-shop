@@ -13,7 +13,7 @@ function Home() {
   return (
 
 
-    <Grid>
+    <div className='text-box'>
 
       <span className='home-text'>
         <h1 data-text="Good Gains" className='neon'>Good Gains</h1>
@@ -21,7 +21,7 @@ function Home() {
       </span>
         <button className='submit-btn'>Register</button>
         <button className='submit-btn'>Login</button>
-    </Grid>
+    </div>
 
 
 

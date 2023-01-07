@@ -35,7 +35,6 @@ body {
     background: url('/images/gym5.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    font-family: 'roboto', sans-serif;
     width: 100%;
     margin: 0 auto;
     height: auto;
@@ -43,9 +42,8 @@ body {
 }
 
 .container img {
+    top: 0;
     border-radius: 50%;
-    height: 100px;
-    padding: 10px;
 }
 
 .container {
