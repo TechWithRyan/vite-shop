@@ -12,17 +12,20 @@ import Products from './Products';
 function Home() {
   return (
 
+<>
 
     <div className='text-box'>
 
       <span className='home-text'>
         <h1 data-text="Good Gains" className='neon'>Good Gains</h1>
-        {/* <p>We're just getting started</p> */}
       </span>
+        {/* <p>We're just getting started</p> */} 
+        </div>
         <button className='submit-btn'>Register</button>
         <button className='submit-btn'>Login</button>
-    </div>
+   
 
+</>
 
 
   );

@@ -36,13 +36,30 @@ app.post('/products', (req, res) => {
 app.get("/products", (req, res) => {
     const q = "SELECT * FROM products";
     db.query(q, (err, data) => {
-        if (err) {
-          console.log(err);
+        if (err) 
+        {
           return res.json(err);
         }
         return res.json(data);
       });
     });
+
+//Add products to database HTTP request to DB. Endpoint. 
+add.post("/products", (req, res ) => {
+    const q = "INSERT INTO products(`Title`, `Description`, `Img`, `Price`) VALUES(?)";
+    const values = [
+        req.body.Title,
+        req.body.Description,
+        req.body.Img,
+        req.body.Price,
+    ];
+    db.query(q, [values], (err, data) => {
+        if (err) 
+        return res.send(err);
+        return res.json("Added product");
+    });
+});
+
 
 
 app.listen(8080, () => {

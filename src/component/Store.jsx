@@ -34,12 +34,10 @@ function Store() {
                         <div className="title">{product.Title}</div>
                         <div className="image-box"><img className="image" src={product.Img} alt="training shoes" /></div>
                         <div className="description">{product.Description}</div>
-                        <div className="price">{product.Price} SEK</div>
+                        <div className="price">{product.Price} kr</div>
                     </div>
                 ))}
             </div>
-            {/* <div className="hero-image-2"></div>
-    <div className="hero-image-3">Part 3</div> */}
         </>
 
     );
