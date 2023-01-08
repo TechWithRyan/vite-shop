@@ -45,7 +45,7 @@ app.get("/products", (req, res) => {
     });
 
 //Add products to database HTTP request to DB. Endpoint. 
-add.post("/products", (req, res ) => {
+app.post("/products", (req, res ) => {
     const q = "INSERT INTO products(`Title`, `Description`, `Img`, `Price`) VALUES(?)";
     const values = [
         req.body.Title,
