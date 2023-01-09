@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;1,200;1,600&display=swap');
 
 .about-container {
-  height: 40vh;
-  width: 40vw;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -11,9 +9,6 @@
   flex-direction: column;
   padding: 5vw;
   color: aliceblue;
-  font-weight: 500;
-  font-size: 20px;
-  font-family: 'Urbanist', sans-serif;
 } 
 
 h1 {

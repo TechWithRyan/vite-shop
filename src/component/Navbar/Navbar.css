@@ -9,6 +9,9 @@
 
 }
 
+.logo {
+    font-size: small;
+}
 
 .container{
     max-width: 1100px;
@@ -71,7 +74,6 @@
         display: block;
         cursor: pointer;
         z-index: 19;
-
     }
     .nav-elements{
         position: absolute;
