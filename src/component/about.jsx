@@ -12,7 +12,7 @@ function About() {
     return (
         <Box>
             <Grid className="grid-style">
-                <div class="about-container">
+                <div className="about-container">
                     <img src={Me} className="myphoto"></img>
                     <h1>Ryan-Phillips Iserhills Cornelio </h1>
                     <i>Web development in E-commerce</i>

@@ -1,7 +1,6 @@
 .image {
     width: 50%;
     height: 10vw;
-    /*     border: 2px solid red; */
     flex-direction: column;
     display: flex;
     margin: 0 auto;
@@ -11,10 +10,8 @@
 .image-box {
     width: 100%;
     height: auto;
-    /*     border: 2px solid blue; */
     color: aliceblue;
     font-weight: 500;
-    /*     background-color: aliceblue; */
 }
 
 
@@ -25,8 +22,6 @@
     font-weight: 600;
     color: aliceblue;
     font-weight: 500;
-    /*     background-color: aliceblue; */
-    font-family: 'Urbanist', sans-serif;
 }
 
 .description {
@@ -34,8 +29,6 @@
     text-align: center;
     color: aliceblue;
     font-weight: 500;
-    /*     background-color: aliceblue; */
-    font-family: 'Urbanist', sans-serif;
 
 }
 
@@ -44,14 +37,11 @@
     text-align: center;
     color: aliceblue;
     font-weight: 500;
-    /*     background-color: aliceblue; */
-    font-family: 'Urbanist', sans-serif;
 }
 
 .box {
     width: 100%;
     flex-wrap: wrap;
-    /*     border: 2px solid green; */
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -60,7 +50,6 @@
 
 .box-1 {
     width: 40%;
-    /* border: 2px solid tomato; */
     height: 30vh;
     margin: auto;
     background-color: transparent;
@@ -77,4 +66,12 @@ body {
     width: 100%;
     background-color: transparent;
     display: flex;
+}
+
+@media (max-width: 650px) {
+    .hero-image-store {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
 }
