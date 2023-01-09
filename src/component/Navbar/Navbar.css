@@ -1,12 +1,14 @@
 *{
     margin: 0;
+    --nav-load-time: 300ms;
+    --nav-link-load-time: 500ms;
 }
 
 .navbar{
     background-color:transparent;
     height: 60px;
     position: relative;
-
+    animation: nav-load var(--nav-load-time) ease-in;
 }
 
 .logo {
@@ -44,14 +46,24 @@
 .nav-elements ul a {
     font-size: 20px;
     font-weight: 400;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .nav-elements ul a.active{
-    color: rgb(246, 250, 248);
+    color: rgb(246, 247, 250);
     position: relative;
 }
+
+.nav-elements li {
+    animation-name: nav-link-load;
+    animation-duration: var(--nav-link-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--nav-load-time);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
 
 .nav-elements ul a.active::after{
     content: '';
@@ -79,7 +91,7 @@
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: steelblue;
+        background-color: rgb(30, 129, 211);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -103,3 +115,26 @@
         margin-top: 20px;
     }
 }
+
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}   
+
+@keyframes nav-link-load {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}   
+

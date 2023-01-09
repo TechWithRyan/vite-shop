@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Addproducts.css';
+import axios from 'axios';
 
 const Addproducts = () => {
 
@@ -17,7 +18,7 @@ const Addproducts = () => {
     const handleChange = (e) => {
         setProducts((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-}
+
 const handleClick = async (e) => {
     e.preventDefault();
     try {
@@ -27,20 +28,18 @@ const handleClick = async (e) => {
         console.log(err);
         setError(true)
     }
-
+};
     return (
         <div>
-            <div className='box-form'>
-                Banan
-                <input type="text" onChange={handleChange} name="Title" />
-                <textarea type="text" row={5} onChange={handleChange} name="Description" />
-                <input type="number" onChange={handleChange} name="Price" />
-                <input type="text" onChange={handleChange} name="Img" />
-                <button onClick={handleClick}>Submit</button>
-            </div>
+                <input type="text" className='box-form' onChange={handleChange} name="Title" placeholder='Title' />
+                <textarea type="text" className='box-form' row={7} onChange={handleChange} name="Description" placeholder='Description'/>
+                <input type="number" className='box-form' onChange={handleChange} name="Price" placeholder='Price'/>
+                <input type="text" className='box-form' onChange={handleChange} name="Img" placeholder='Img URL'/>
+                <button onClick={handleClick} className='box-form submit-btn'>Submit</button>
         </div>
+      
 
-    );
+);
 };
 
 

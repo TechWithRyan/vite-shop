@@ -1,30 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;1,200;1,600&display=swap');
 
-.hero-image {
-    padding: 60px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-}
-
-.text-box {
-    height: 100%;
-    width: auto;
-}
-
-h4 {
-    color: black;
-    position: relative;
-    text-transform: uppercase;
-}
-
 .home-text {
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;  
+    min-height: 20vh;  
 }
 
 .neon {
@@ -35,9 +15,7 @@ h4 {
     color: #fff;
     text-shadow: 0 0 20px #2072ec;
     text-transform: uppercase;
-    cursor: default;
-    font-family: 'Urbanist', sans-serif;
-   
+    cursor: default;   
 }
 
 .neon:after {
@@ -48,7 +26,6 @@ h4 {
     color: #0099ff;
     filter: blur(15px)
 }
-
 .neon:before {
     content: '';
     position: absolute;
@@ -59,6 +36,7 @@ h4 {
     opacity: .5;
     filter: blur(40px);
 }
+
 
 @media (max-width: 650px) {
     .neon {

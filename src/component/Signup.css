@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Urbanist', sans-serif;
-}
-
 *:focus {
     outline: none;
 }
@@ -14,7 +7,6 @@
     height: auto;
     font-weight: 600;
     color: #fff;
-    font-family: 'roboto', sans-serif;
 }
 
 .heading {
