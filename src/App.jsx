@@ -11,27 +11,29 @@ import Store from './component/Store';
 import Cart from './Pages/Cart';
 import Products from './Pages/Products';
 import Addproducts from './component/Addproducts';
+import { useState, useEffect } from 'react';
+import './App.css';
 
-function App() {
+
+const App = () => {
+
   return (
     <>
-
-    <div>
-    <Navbar />
-      <Routes>
-        <Route path="/Products" element={<Products />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/Store" element={<Store />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Cart" element={<Cart />} />
-        <Route path="/Addproducts" element={<Addproducts />} />
-
-      </Routes>
-    <Footer />
-    </div>
+      <div className='App'>
+        <Navbar />
+        <Routes>
+          <Route path="/Products" element={<Products />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Store" element={<Store />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Addproducts" element={<Addproducts />} />
+        </Routes>
+        <Footer />
+      </div>
 
     </>
   );

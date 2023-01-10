@@ -9,6 +9,14 @@ body {
     overflow: hidden;
 }
 
+/* .App {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 10px;
+    width: 10px;
+} */
+
 .cart-container{
     background-color: white;
     padding: 15%;
