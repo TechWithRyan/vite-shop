@@ -7,7 +7,7 @@ const Addproducts = () => {
 
     const [products, setProducts] = useState({
         Title: "",
-        Desription: "",
+        Description: "",
         Price: null,
         Img: "",
     });
@@ -29,18 +29,17 @@ const handleClick = async (e) => {
         setError(true)
     }
 };
+console.log(products);
     return (
         <div>
                 <input type="text" className='box-form' onChange={handleChange} name="Title" placeholder='Title' />
-                <textarea type="text" className='box-form' row={7} onChange={handleChange} name="Description" placeholder='Description'/>
                 <input type="number" className='box-form' onChange={handleChange} name="Price" placeholder='Price'/>
                 <input type="text" className='box-form' onChange={handleChange} name="Img" placeholder='Img URL'/>
-                <button onClick={handleClick} className='box-form submit-btn'>Submit</button>
+                <textarea type="textarea" row={5} onChange={handleChange} name="Description" placeholder='Description'/>
+                <button className='box-form submit-btn' onClick={handleClick}>Submit</button>
         </div>
-      
 
 );
 };
-
 
 export default Addproducts

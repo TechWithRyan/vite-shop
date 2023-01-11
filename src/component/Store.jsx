@@ -3,12 +3,6 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import './Store.css';
 
-const Container = styled.div`
-    
-`;
-
-
-
 function Store() {
     const [product, setProduct] = useState([])
     useEffect(() => {
