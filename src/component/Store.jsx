@@ -2,6 +2,9 @@ import styled from "styled-components";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import './Store.css';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Link } from 'react-router-dom';
+
 
 function Store() {
     const [product, setProduct] = useState([])
@@ -14,10 +17,20 @@ function Store() {
                 console.log(err)
             }
         }
+
         fetchAllProducts();
 
     }, [])
     console.log(product)
+    const handleDelete = async (id) => {
+        try {
+            await axios.delete(`http://localhost:8080/products/${id}`);
+            window.location.reload();
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     return (
 
         <>
@@ -29,6 +42,9 @@ function Store() {
                         <div className="image-box"><img className="image" src={product.Img} alt="training shoes" /></div>
                         <div className="description">{product.Description}</div>
                         <div className="price">{product.Price} kr</div>
+                        <div>
+                    <Link onClick={() => handleDelete(product.id)}><DeleteForeverIcon /></Link>
+                        </div>
                     </div>
                 ))}
             </div>
