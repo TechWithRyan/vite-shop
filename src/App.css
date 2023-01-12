@@ -6,16 +6,15 @@
 }
 
 body { 
-    overflow: hidden;
+   /*  overflow: hidden; */
 }
 
-/* .App {
+.App {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 10px;
-    width: 10px;
-} */
+
+}
 
 .cart-container{
     background-color: white;
@@ -91,19 +90,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: white;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: black;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid white;  /* creates padding around scroll thumb */
-  }
+
 
 @media (max-width: 600px) {
     .cart-wrapper {

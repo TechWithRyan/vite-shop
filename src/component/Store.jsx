@@ -35,18 +35,21 @@ function Store() {
     return (
 
         <>
-            <div className="hero-image-store">
+            <div className="hero-image">
                 {product.map((product) => (
                     <div className="box-1">
-                        <div key={product.Key} />
+                        <div key={product.Key} className="single-box" />
                         <div className="title">{product.Title}</div>
                         <div className="image-box"><img className="image" src={product.Img} alt="training shoes" /></div>
                         <div className="description">{product.Description}</div>
                         <div className="price">{product.Price} kr</div>
-                        <div>
-                    <Link onClick={() => handleDelete(product.id)}><DeleteForeverIcon /></Link>
-                    <Link onClick={() => handleUpdate(product.id)}><UpdateIcon /></Link>
+                        <div className="store-icon">
+                            <Link onClick={() => handleDelete(product.id)}><DeleteForeverIcon /></Link>
                         </div>
+                        <div className="store-icon">
+                            <Link onClick={() => handleUpdate(product.id)}><UpdateIcon /></Link>
+                        </div>
+
                     </div>
                 ))}
             </div>
