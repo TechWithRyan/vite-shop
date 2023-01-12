@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Addproducts.css';
 import axios from 'axios';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Link } from 'react-router-dom';
 
 const Addproducts = () => {
 
@@ -29,6 +31,8 @@ const handleClick = async (e) => {
         setError(true)
     }
 };
+
+
 console.log(products);
     return (
         <div>
@@ -37,6 +41,7 @@ console.log(products);
                 <input type="text" className='box-form' onChange={handleChange} name="Img" placeholder='Img URL'/>
                 <textarea type="textarea" row={5} onChange={handleChange} name="Description" placeholder='Description'/>
                 <button className='box-form submit-btn' onClick={handleClick}>Submit</button>
+                <Link ><DeleteForeverIcon /></Link>
         </div>
 
 );
