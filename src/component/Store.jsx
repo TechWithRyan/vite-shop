@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import './Store.css';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import UpdateIcon from '@mui/icons-material/Update';
 import { Link } from 'react-router-dom';
 
 
@@ -44,6 +45,7 @@ function Store() {
                         <div className="price">{product.Price} kr</div>
                         <div>
                     <Link onClick={() => handleDelete(product.id)}><DeleteForeverIcon /></Link>
+                    <Link onClick={() => handleUpdate(product.id)}><UpdateIcon /></Link>
                         </div>
                     </div>
                 ))}

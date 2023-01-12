@@ -34,11 +34,11 @@ const handleClick = async (e) => {
 
 console.log(products);
     return (
-        <div>
+        <div className=''>
                 <input type="text" className='box-form' onChange={handleChange} name="Title" placeholder='Title' />
                 <input type="number" className='box-form' onChange={handleChange} name="Price" placeholder='Price'/>
                 <input type="text" className='box-form' onChange={handleChange} name="Img" placeholder='Img URL'/>
-                <textarea type="textarea" row={5} onChange={handleChange} name="Description" placeholder='Description'/>
+                <textarea type="text" className='box-form' row={5} onChange={handleChange} name="Description" placeholder='Description'/>
                 <button className='box-form submit-btn' onClick={handleClick}>Submit</button>
                 
         </div>
