@@ -8,12 +8,13 @@ import { Link } from 'react-router-dom';
 
 
 function Store() {
-    const [product, setProduct] = useState([])
+    const [products, setProducts] = useState([])
     useEffect(() => {
         const fetchAllProducts = async () => {
             try {
                 const res = await axios.get('http://localhost:8080/products')
-                setProduct(res.data)
+                setProducts(res.data)
+                console.log(res.data) // ? Här? 
             } catch (err) {
                 console.log(err)
             }
@@ -22,7 +23,6 @@ function Store() {
         fetchAllProducts();
 
     }, [])
-    console.log(product)
     const handleDelete = async (id) => {
         try {
             await axios.delete(`http://localhost:8080/products/${id}`);
@@ -36,7 +36,7 @@ function Store() {
 
         <>
             <div className="hero-image">
-                {product.map((product) => (
+                {products.map((product) => (
                     <div className="box-1">
                         <div key={product.Key} className="single-box" />
                         <div className="title">{product.Title}</div>
