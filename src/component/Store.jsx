@@ -14,6 +14,7 @@ function Store() {
             try {
                 const res = await axios.get('http://localhost:8080/products')
                 setProducts(res.data)
+                console.log(res.data) // ? Här? 
             } catch (err) {
                 console.log(err)
             }
