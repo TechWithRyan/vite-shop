@@ -41,7 +41,6 @@ const SizeTitle = styled.span`
     display: flex;
     font-size: 24px;
     width: auto;
-
 `;
 const Size = styled.option`
 `;
@@ -54,8 +53,8 @@ const Button = styled.button`
 `;
 
 const Image = styled.img`
-  width: 70%;
-  height: 100%;
+  width: 30vw;
+  height: 50vh;
   object-fit: contain;
 
 `;
