@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import "./Signup.css"
 import { Link } from '@mui/material';
-import { NavLink } from 'react-router-dom'
 
 const Agreement = styled.span`
   font-size:18px;

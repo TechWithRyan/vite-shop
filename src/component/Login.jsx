@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 
-
 const Button = styled.button`
   width: 20%;
   margin: 0 auto;
@@ -53,18 +52,15 @@ const Link = styled.a`
 
 const Login = () => {
   return (
-
     <Container className='hero-image'>
       <Wrapper>
         <Title>Login</Title>
         <Form className='form'>
-
-          <Input placeholder="Username" className="email"/>
-          <Input placeholder="Password" type="password"/>
+          <Input placeholder="Username" className="email" />
+          <Input placeholder="Password" type="password" />
           <Link>Forgot Password?</Link>
           <Button className='submit-btn'>Go</Button>
           <Link>New Account</Link>
-          
         </Form>
       </Wrapper>
     </Container>

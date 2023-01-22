@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-import A4 from '../../images/A4.jpg'
 
 const Container = styled.div`
     
@@ -45,8 +44,6 @@ const SizeTitle = styled.span`
 
 `;
 const Size = styled.option`
-
-
 `;
 
 const Button = styled.button`
@@ -62,18 +59,18 @@ const Image = styled.img`
   object-fit: contain;
 
 `;
-// <img src={A4} alt="shoes"></img>
+
 function Products() {
-  return (
-    <Container className="hero-image">
-        <Wrapper>
-            <ImageContainer> 
-                <Image src="https://images.unsplash.com/photo-1644661458456-d8ad35f5c9a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNwb3J0cyUyMGhvb2RpZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
-            </ImageContainer>
+    return (
+        <Container className="hero-image">
+            <Wrapper>
+                <ImageContainer>
+                    <Image src="https://images.unsplash.com/photo-1644661458456-d8ad35f5c9a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNwb3J0cyUyMGhvb2RpZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                </ImageContainer>
                 <InfoContainer>
                     <Title>Zip Windbreaker</Title>
                     <ItemInfo>
-                    Flexible material.
+                        Flexible material.
                     </ItemInfo>
                     <PriceContainer>Price 699 kr</PriceContainer>
                     <SizeContainer>
@@ -87,14 +84,12 @@ function Products() {
                         <Size>43</Size>
                         <Size>44</Size>
                         <Size>45</Size>
-                           
                     </SizeContainer>
                     <Button>Lägg till i kundvagn</Button>
                 </InfoContainer>
-            
-        </Wrapper>
-    </Container>
-  )
+            </Wrapper>
+        </Container>
+    )
 }
 
 export default Products

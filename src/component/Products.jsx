@@ -64,9 +64,6 @@ const Container = styled.div`
   }
 `;
 
-
-
-
 const Products = ({ item }) => {
     return (
         <Container>

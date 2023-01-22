@@ -4,14 +4,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
-
 
 function Footer() {
   return (
-
-
-
     <AppBar position="static">
       <div className="footer">
         <a href="/">

@@ -1,11 +1,9 @@
-import styled from "styled-components";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import './Store.css';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import UpdateIcon from '@mui/icons-material/Update';
 import { Link } from 'react-router-dom';
-
 
 function Store() {
     const [products, setProducts] = useState([])
@@ -19,7 +17,6 @@ function Store() {
                 console.log(err)
             }
         }
-
         fetchAllProducts();
 
     }, [])
@@ -33,7 +30,6 @@ function Store() {
     };
 
     return (
-
         <>
             <div className="hero-image">
                 {products.map((product) => (
@@ -49,7 +45,6 @@ function Store() {
                         <div className="store-icon">
                             <Link onClick={() => handleUpdate(product.id)}><UpdateIcon /></Link>
                         </div>
-
                     </div>
                 ))}
             </div>
