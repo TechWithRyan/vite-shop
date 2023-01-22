@@ -4,9 +4,6 @@ import Me from '../../images/me1.jpg'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import './about.css'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function About() {
     return (

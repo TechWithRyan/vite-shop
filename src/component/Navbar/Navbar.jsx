@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css';
-import { SportsBasketball } from '@mui/icons-material';
-import react from 'react';
-import Ball from '../../../images/bball.png'
 import Logga from '../../../images/logga.png'
 import MenuIcon from '@mui/icons-material/Menu';
 

@@ -11,9 +11,7 @@ import Store from './component/Store';
 import Cart from './Pages/Cart';
 import Products from './Pages/Products';
 import Addproducts from './component/Addproducts';
-import { useState, useEffect } from 'react';
 import './App.css';
-
 
 const App = () => {
 
