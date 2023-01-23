@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+import '../../App.css'
 import A1 from '../../images/A1.jpeg'
 
 function Cart() {
